@@ -103,7 +103,7 @@
             layers = <0 1>;
             timeout-ms = <50>;
         };
-
+    };
     keymap {
         compatible = "zmk,keymap";
 
