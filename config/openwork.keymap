@@ -48,30 +48,16 @@
     };
 
     macros {
-        macro_phone: macro_phone {
-            // 1351
-
-            label = "MACRO_PHONE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N3 &kp N5 &kp N1>;
-        };
+        
         macro_email_q: macro_email_q {
-            // 2894512440@qq.com
+            // 714448168@qq.com
 
             label = "MACRO_EMAIL_QQ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N2 &kp N8 &kp N9 &kp N4 &kp N5 &kp N1 &kp N2 &kp N4 &kp N4 &kp N0 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp N7 &kp N1 &kp N4 &kp N4 &kp N4 &kp N8 &kp N1 &kp N6 &kp N8 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
         };
-        macro_email_g: macro_email_g {
-            // 135115
 
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_EMAIL_GMAIL";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N3 &kp N5 &kp N1 &kp N1 &kp N5>;
-        };
     };
 
     combos {
