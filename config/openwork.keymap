@@ -58,6 +58,13 @@
             bindings = <&kp N7 &kp N1 &kp N4 &kp N4 &kp N4 &kp N8 &kp N1 &kp N6 &kp N8 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
         };
 
+        GUANJIANCI: GUANJIANCI {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
+        };
+
     };
 
     combos {
@@ -65,27 +72,27 @@
 
         up {
             bindings = <&kp UP>;
-            key-positions = <16 28>;
+            key-positions = <15 16>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <28 40>;
+            key-positions = <39 40>;
             timeout-ms = <50>;
         };
 
         left {
             bindings = <&kp LEFT>;
-            key-positions = <27 28>;
+            key-positions = <26 27>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <28 29>;
+            key-positions = <27 28>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
@@ -101,7 +108,7 @@
                         &kp CAPSLOCK    &kp A   &kp S         &kp D         &kp F      &kp G                  &kp H          &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
                         &kp LSHFT       &kp Z   &kp X         &kp C         &kp V      &kp B                  &kp N          &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                                                 &kp LCTRL     &kp LEFT_ALT  &kp GRAVE                                        &kp BSLH   &kp LBKT   &kp RBKT 
-                                                &kp RETURN    &mo  1        &kp RIGHT  &mt LGUI DEL           &kp BACKSPACE  &kp SPACE  &mo  2     &kp RSHFT
+                                                &kp RIGHT     &mo  1        &kp RETURN  &mt LGUI DEL           &kp BACKSPACE  &kpRSHFT   &mo  2     &kp SPACE
             >;
         };
 
